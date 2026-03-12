@@ -21,6 +21,7 @@ export default function ActivatePromocodePage() {
   return (
     <ArticleLayout
       title="Как активировать промокод Pocket Option и получить бонус"
+      slug="/activate-promocode"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

@@ -21,6 +21,7 @@ export default function SupportPage() {
   return (
     <ArticleLayout
       title="Как связаться с поддержкой на русском в Pocket Option"
+      slug="/support"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './ArticleLayout.module.css';
+import { ctaLinks } from '@/lib/ctaLinks';
 
 interface Breadcrumb {
   label: string;
@@ -9,10 +10,13 @@ interface Breadcrumb {
 interface ArticleLayoutProps {
   title: string;
   breadcrumbs: Breadcrumb[];
+  slug: string;
   children: React.ReactNode;
 }
 
-export default function ArticleLayout({ title, breadcrumbs, children }: ArticleLayoutProps) {
+export default function ArticleLayout({ title, breadcrumbs, slug, children }: ArticleLayoutProps) {
+  const cta = ctaLinks[slug] ?? null;
+
   return (
     <>
       <section className={styles.hero}>
@@ -34,13 +38,27 @@ export default function ArticleLayout({ title, breadcrumbs, children }: ArticleL
             ))}
           </nav>
           <h1 className={styles.heroTitle}>{title}</h1>
+          {cta && (
+            <a href={cta.href} className={`btn btn-primary ${styles.heroCta}`}>
+              {cta.label}
+            </a>
+          )}
         </div>
       </section>
 
       <section className="section">
         <div className="container">
           <div className={styles.layout}>
-            <article className={styles.article}>{children}</article>
+            <article className={styles.article}>
+              {children}
+              {cta && (
+                <div className={styles.articleCta}>
+                  <a href={cta.href} className="btn btn-primary">
+                    {cta.label}
+                  </a>
+                </div>
+              )}
+            </article>
             <aside className={styles.sidebar}>
               <div className={styles.sidebarCard}>
                 <h3 className={styles.sidebarTitle}>Быстрый старт</h3>
@@ -62,18 +80,30 @@ export default function ArticleLayout({ title, breadcrumbs, children }: ArticleL
                   <li><Link href="/support">Служба поддержки</Link></li>
                 </ul>
               </div>
-              <div className={styles.sideboxCta}>
-                <p>Начните торговать с демо-счётом 10 000$</p>
-                <a
-                  href="https://pocoptrade.com"
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ width: '100%', textAlign: 'center' }}
-                >
-                  Открыть демо-счёт
-                </a>
-              </div>
+              {cta && (
+                <div className={styles.sideboxCta}>
+                  <p>{title}</p>
+                  <a
+                    href={cta.href}
+                    className="btn btn-primary"
+                    style={{ width: '100%', textAlign: 'center' }}
+                  >
+                    {cta.label}
+                  </a>
+                </div>
+              )}
+              {!cta && (
+                <div className={styles.sideboxCta}>
+                  <p>Начните торговать с демо-счётом 10 000$</p>
+                  <a
+                    href="/lk"
+                    className="btn btn-primary"
+                    style={{ width: '100%', textAlign: 'center' }}
+                  >
+                    Открыть демо-счёт
+                  </a>
+                </div>
+              )}
             </aside>
           </div>
         </div>

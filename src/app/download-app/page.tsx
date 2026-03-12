@@ -21,6 +21,7 @@ export default function DownloadAppPage() {
   return (
     <ArticleLayout
       title="Где скачать приложение Pocket Option на iPhone и Android"
+      slug="/download-app"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

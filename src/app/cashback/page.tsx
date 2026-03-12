@@ -21,6 +21,7 @@ export default function CashbackPage() {
   return (
     <ArticleLayout
       title="Что такое кешбэк и как его получить в Pocket Option?"
+      slug="/cashback"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

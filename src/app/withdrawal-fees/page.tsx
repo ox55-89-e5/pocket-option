@@ -21,6 +21,7 @@ export default function WithdrawalFeesPage() {
   return (
     <ArticleLayout
       title="Есть ли комиссия за вывод и какие лимиты в Pocket Option"
+      slug="/withdrawal-fees"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

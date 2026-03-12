@@ -19,80 +19,84 @@ export const metadata: Metadata = {
   },
 };
 
-type FaqItem = { q: string; href: string };
-type FaqCategory = { title: string; icon: string; items: FaqItem[] };
+type FaqItem = { q: string; href: string; icon: string };
+type FaqCategory = { title: string; items: FaqItem[] };
 
 const faqCategories: FaqCategory[] = [
   {
     title: 'Регистрация и вход',
-    icon: '👤',
     items: [
-      { q: 'Как зарегистрироваться в Pocket Option?', href: '/registration' },
-      { q: 'Что делать, если забыл пароль?', href: '/recovery-password' },
-      { q: 'Можно ли торговать без верификации?', href: '/verification' },
-      { q: 'Сколько времени занимает верификация?', href: '/verification' },
+      { q: 'Как зарегистрироваться в Pocket Option?', href: '/registration', icon: '📋' },
+      { q: 'Что делать, если забыл пароль?', href: '/recovery-password', icon: '🔑' },
+      { q: 'Можно ли торговать без верификации?', href: '/verification', icon: '🪪' },
     ],
   },
   {
     title: 'Пополнение и вывод средств',
-    icon: '💳',
     items: [
-      { q: 'Как пополнить счет и какой минимальный депозит?', href: '/deposit' },
-      { q: 'Как вывести деньги с Pocket Option на карту?', href: '/withdraw' },
-      { q: 'Есть ли комиссия за вывод и какие лимиты?', href: '/withdrawal-fees' },
+      { q: 'Как пополнить счет и какой минимальный депозит?', href: '/deposit', icon: '💳' },
+      { q: 'Как вывести деньги с Pocket Option на карту?', href: '/withdraw', icon: '🟢' },
+      { q: 'Есть ли комиссия за вывод и какие лимиты?', href: '/withdrawal-fees', icon: '🟦' },
     ],
   },
   {
     title: 'Мобильное приложение',
-    icon: '📱',
     items: [
-      { q: 'Где скачать приложение Pocket Option на iPhone и Android?', href: '/download-app' },
-      { q: 'Что такое веб-версия платформы?', href: '/download-app' },
+      { q: 'Где скачать приложение Pocket Option на iPhone и Android?', href: '/download-app', icon: '📱' },
+      { q: 'Какие отзывы о мобильном приложении?', href: '/app-reviews', icon: '⭐' },
+      { q: 'Что такое веб-версия платформы?', href: '/web-version', icon: '🌐' },
     ],
   },
   {
     title: 'Бонусы и промокоды',
-    icon: '🎁',
     items: [
-      { q: 'Какой бонус дают за регистрацию?', href: '/bonus' },
-      { q: 'Как активировать промокоды?', href: '/activate-promocode' },
-      { q: 'Что такое кешбэк и как его получить?', href: '/cashback' },
-      { q: 'Дают ли бонус без депозита?', href: '/no-deposit-bonus' },
+      { q: 'Какой бонус дают за регистрацию?', href: '/bonus', icon: '🎁' },
+      { q: 'Как активировать промокоды?', href: '/activate-promocode', icon: '🏷️' },
+      { q: 'Что такое кешбэк и как его получить?', href: '/cashback', icon: '🔄' },
+      { q: 'Дают ли бонус без депозита?', href: '/no-deposit-bonus', icon: '💎' },
     ],
   },
   {
     title: 'Торговля и обучение',
-    icon: '📊',
     items: [
-      { q: 'Какие стратегии торговли работают?', href: '/strategies' },
-      { q: 'Как торговать в плюс на Pocket Option?', href: '/plus-trading' },
-      { q: 'Как работает копирование сделок?', href: '/copy-trading' },
+      { q: 'Какие стратегии торговли работают?', href: '/strategies', icon: '⚡' },
+      { q: 'Где пройти обучение трейдингу?', href: '/training', icon: '🎓' },
+      { q: 'С чего начать новичку на платформе?', href: '/beginner', icon: '🚀' },
+      { q: 'Как торговать в плюс?', href: '/plus-trading', icon: '📈' },
+      { q: 'Какие индикаторы доступны?', href: '/indicators', icon: '📊' },
+      { q: 'Что такое AI Mode?', href: '/aimode', icon: '🤖' },
+      { q: 'Как работает копирование сделок?', href: '/copy-trading', icon: '👥' },
     ],
   },
   {
     title: 'Репутация и безопасность',
-    icon: '🔒',
     items: [
-      { q: 'Есть ли у Pocket Option лицензия?', href: '/license' },
-      { q: 'Почему Pocket Option в черном списке ЦБ?', href: '/license' },
+      { q: 'Где почитать отзывы о платформе?', href: '/reviews', icon: '🔍' },
+      { q: 'Есть ли у Pocket Option лицензия?', href: '/license', icon: '📄' },
+      { q: 'Почему Pocket Option в черном списке ЦБ?', href: '/blacklist', icon: '⚠️' },
+      { q: 'Насколько безопасна платформа?', href: '/safety', icon: '🔒' },
     ],
   },
   {
     title: 'Технические вопросы',
-    icon: '⚙️',
     items: [
-      { q: 'Как связаться с поддержкой на русском?', href: '/support' },
+      { q: 'Почему Pocket Option не работает сегодня и где найти зеркало сайта?', href: '/mirror', icon: '🟢' },
     ],
   },
   {
     title: 'Дополнительные возможности',
-    icon: '🚀',
     items: [
-      { q: 'Как участвовать в турнирах?', href: '/promo' },
-      { q: 'Как зарабатывать на партнерской программе?', href: '/cabinet' },
+      { q: 'Как участвовать в турнирах?', href: '/tournaments', icon: '🏆' },
+      { q: 'Как зарабатывать на партнёрской программе?', href: '/affiliate', icon: '🤝' },
+      { q: 'Как связаться с поддержкой на русском?', href: '/support', icon: '💬' },
+      { q: 'Как включить двухфакторную защиту?', href: '/2fa', icon: '🔐' },
+      { q: 'Где найти историю операций?', href: '/history', icon: '📋' },
+      { q: 'Сколько ждать верификацию?', href: '/wait-verification', icon: '⏳' },
     ],
   },
 ];
+
+const totalQuestions = faqCategories.reduce((sum, cat) => sum + cat.items.length, 0);
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -120,50 +124,25 @@ export default function FaqPage() {
       <section className={styles.hero}>
         <div className="container">
           <div className={styles.heroContent}>
-            <span className="badge">База знаний</span>
-            <h1 className={styles.heroTitle}>FAQ по платформе Pocket Option</h1>
+            <h1 className={styles.heroTitle}>Часто задаваемые вопросы</h1>
             <p className={styles.heroSubtext}>
-              Ответы на самые популярные вопросы о торговле, депозитах и безопасности
+              Ответы на все вопросы о платформе Pocket Option — от регистрации до вывода прибыли
             </p>
           </div>
         </div>
       </section>
 
-      <nav className={styles.catNav} aria-label="Категории FAQ">
-        <div className="container">
-          <div className={styles.catList}>
-            {faqCategories.map((cat) => (
-              <a
-                key={cat.title}
-                href={`#${encodeURIComponent(cat.title)}`}
-                className={styles.catLink}
-              >
-                <span>{cat.icon}</span>
-                <span>{cat.title}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
-
       <section className="section">
         <div className="container">
           <div className={styles.faqSections}>
             {faqCategories.map((cat) => (
-              <div
-                key={cat.title}
-                id={encodeURIComponent(cat.title)}
-                className={styles.faqCat}
-              >
-                <div className={styles.catHeader}>
-                  <span className={styles.catIcon}>{cat.icon}</span>
-                  <h2 className={styles.catTitle}>{cat.title}</h2>
-                </div>
-                <div className={styles.questionList}>
+              <div key={cat.title} className={styles.faqCat}>
+                <h2 className={styles.catTitle}>{cat.title}</h2>
+                <div className={styles.questionGrid}>
                   {cat.items.map((item) => (
-                    <Link key={item.q} href={item.href} className={styles.questionLink}>
+                    <Link key={item.href + item.q} href={item.href} className={styles.questionCard}>
+                      <span className={styles.cardIcon}>{item.icon}</span>
                       <span className={styles.questionText}>{item.q}</span>
-                      <span className={styles.questionArrow}>→</span>
                     </Link>
                   ))}
                 </div>
@@ -173,26 +152,24 @@ export default function FaqPage() {
         </div>
       </section>
 
-      <section className={`section ${styles.contactSection}`}>
+      <section className={styles.statsSection}>
         <div className="container">
-          <div className={styles.contactBox}>
-            <h2 className={styles.contactTitle}>Не нашли ответ?</h2>
-            <p className={styles.contactText}>
-              Служба поддержки Pocket Option работает 24/7 на 12 языках. Среднее время ответа —
-              25 секунд.
-            </p>
-            <div className={styles.contactBtns}>
-              <a href="mailto:support@pocketoption.com" className="btn btn-outline">
-                ✉️ support@pocketoption.com
-              </a>
-              <a
-                href="https://pocoptrade.com"
-                className="btn btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Онлайн-чат 24/7
-              </a>
+          <div className={styles.statsGrid}>
+            <div className={styles.statItem}>
+              <span className={styles.statValue}>{totalQuestions}</span>
+              <span className={styles.statLabel}>ответ</span>
+            </div>
+            <div className={styles.statItem}>
+              <span className={styles.statValue}>24/7</span>
+              <span className={styles.statLabel}>поддержка</span>
+            </div>
+            <div className={styles.statItem}>
+              <span className={styles.statValue}>100%</span>
+              <span className={styles.statLabel}>честно</span>
+            </div>
+            <div className={styles.statItem}>
+              <span className={styles.statValue}>2026</span>
+              <span className={styles.statLabel}>актуально</span>
             </div>
           </div>
         </div>

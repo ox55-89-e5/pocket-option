@@ -21,6 +21,7 @@ export default function StrategiesPage() {
   return (
     <ArticleLayout
       title="Какие стратегии торговли работают на Pocket Option"
+      slug="/strategies"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

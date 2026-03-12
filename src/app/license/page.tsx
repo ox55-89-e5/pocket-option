@@ -21,6 +21,7 @@ export default function LicensePage() {
   return (
     <ArticleLayout
       title="Есть ли у Pocket Option лицензия"
+      slug="/license"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

@@ -21,6 +21,7 @@ export default function DepositPage() {
   return (
     <ArticleLayout
       title="Пополнение счёта Pocket Option: минимальный депозит и способы ввода"
+      slug="/deposit"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

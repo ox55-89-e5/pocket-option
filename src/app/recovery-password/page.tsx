@@ -21,6 +21,7 @@ export default function RecoveryPasswordPage() {
   return (
     <ArticleLayout
       title="Восстановление пароля Pocket Option"
+      slug="/recovery-password"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

@@ -21,6 +21,7 @@ export default function CopyTradingPage() {
   return (
     <ArticleLayout
       title="Как работает копирование сделок в Pocket Option?"
+      slug="/copy-trading"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

@@ -21,6 +21,7 @@ export default function BonusPage() {
   return (
     <ArticleLayout
       title="Какой бонус дают за регистрацию в Pocket Option?"
+      slug="/bonus"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

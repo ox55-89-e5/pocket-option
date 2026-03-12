@@ -21,6 +21,7 @@ export default function WithdrawPage() {
   return (
     <ArticleLayout
       title="Как вывести деньги с Pocket Option на карту"
+      slug="/withdraw"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },

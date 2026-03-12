@@ -21,6 +21,7 @@ export default function VerificationPage() {
   return (
     <ArticleLayout
       title="Можно ли торговать без верификации в Pocket Option"
+      slug="/verification"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
         { label: 'FAQ', href: '/faq' },
