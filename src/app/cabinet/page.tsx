@@ -189,8 +189,8 @@ export default function CabinetPage() {
                   </div>
                 </div>
                 <div className={styles.dashActions}>
-                  <div className={styles.dashBtn}>Пополнить</div>
-                  <div className={`${styles.dashBtn} ${styles.dashBtnSecondary}`}>Вывести</div>
+                  <Link href="/deposit" className={styles.dashBtn}>Пополнить</Link>
+                  <Link href="/withdraw" className={`${styles.dashBtn} ${styles.dashBtnSecondary}`}>Вывести</Link>
                 </div>
               </div>
             </div>

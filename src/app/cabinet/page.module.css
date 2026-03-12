@@ -206,9 +206,11 @@
 }
 
 .dashBtn {
+  display: block;
   background: #1e90ff;
   color: #fff;
   text-align: center;
+  text-decoration: none;
   padding: 10px;
   border-radius: 8px;
   font-size: 0.85rem;
