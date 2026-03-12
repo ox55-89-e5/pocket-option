@@ -21,6 +21,7 @@ export default function CopyTradingPage() {
   return (
     <ArticleLayout
       title="Как работает копирование сделок в Pocket Option?"
+      description="Как работает копирование сделок в Pocket Option: алгоритм, выбор трейдера, лимиты, риски и пошаговая инструкция подключения."
       slug="/copy-trading"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

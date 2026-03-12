@@ -21,6 +21,7 @@ export default function IndicatorsPage() {
   return (
     <ArticleLayout
       title="Какие индикаторы доступны на Pocket Option?"
+      description="Полный список индикаторов технического анализа на платформе Pocket Option: RSI, MACD, Bollinger Bands, скользящие средние и другие."
       slug="/indicators"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

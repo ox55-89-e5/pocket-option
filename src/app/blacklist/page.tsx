@@ -21,6 +21,7 @@ export default function BlacklistPage() {
   return (
     <ArticleLayout
       title="Почему Pocket Option в чёрном списке ЦБ РФ?"
+      description="Почему Pocket Option в чёрном списке Банка России, что это значит на практике и насколько безопасна платформа для российских трейдеров."
       slug="/blacklist"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

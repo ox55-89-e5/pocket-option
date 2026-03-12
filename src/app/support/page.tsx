@@ -21,6 +21,7 @@ export default function SupportPage() {
   return (
     <ArticleLayout
       title="Как связаться с поддержкой на русском в Pocket Option"
+      description="Как связаться с поддержкой Pocket Option на русском: онлайн-чат, email, Telegram. Время ответа, восстановление доступа и решение частых проблем."
       slug="/support"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

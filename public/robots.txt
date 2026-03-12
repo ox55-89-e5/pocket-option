@@ -15,4 +15,4 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
-Sitemap: https://fpa-group.ru/sitemap.xml
+Sitemap: https://pocoptrade.com/sitemap.xml

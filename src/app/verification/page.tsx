@@ -21,6 +21,7 @@ export default function VerificationPage() {
   return (
     <ArticleLayout
       title="Можно ли торговать без верификации в Pocket Option"
+      description="Можно ли торговать в Pocket Option без верификации? Лимиты на вывод, пошаговая инструкция по верификации и риски анонимной торговли."
       slug="/verification"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

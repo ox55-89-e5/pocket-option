@@ -21,6 +21,7 @@ export default function TwoFaPage() {
   return (
     <ArticleLayout
       title="Как включить двухфакторную защиту на Pocket Option?"
+      description="Как включить и настроить двухфакторную аутентификацию (2FA) на Pocket Option для защиты аккаунта."
       slug="/2fa"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

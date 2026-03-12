@@ -21,6 +21,7 @@ export default function WithdrawalFeesPage() {
   return (
     <ArticleLayout
       title="Есть ли комиссия за вывод и какие лимиты в Pocket Option"
+      description="Есть ли комиссия за вывод средств с Pocket Option? Лимиты для верифицированных и неверифицированных аккаунтов, сроки и способы вывода."
       slug="/withdrawal-fees"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

@@ -66,6 +66,21 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Pocket Option',
+  url: SITE_URL,
+  logo: `${SITE_URL}/logo.png`,
+  sameAs: ['https://t.me/pocketoption'],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    email: 'support@pocketoption.com',
+    contactType: 'customer support',
+    availableLanguage: 'Russian',
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -77,6 +92,10 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="Content-Language" content="ru" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
       </head>
       <body>
         <Header />

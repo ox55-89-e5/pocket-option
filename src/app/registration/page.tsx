@@ -21,6 +21,7 @@ export default function RegistrationPage() {
   return (
     <ArticleLayout
       title="Регистрация в Pocket Option: создание профиля"
+      description="Как зарегистрироваться в Pocket Option: через email или Google за 1 минуту. Демо-счёт 10 000$ и бонус START100 сразу после регистрации."
       slug="/registration"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

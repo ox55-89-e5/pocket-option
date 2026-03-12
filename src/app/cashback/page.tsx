@@ -21,6 +21,7 @@ export default function CashbackPage() {
   return (
     <ArticleLayout
       title="Что такое кешбэк и как его получить в Pocket Option?"
+      description="Что такое кешбэк в Pocket Option и как его получить: процент возврата по статусам, инструкция активации, условия вывода и сравнение с бонусами."
       slug="/cashback"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

@@ -21,6 +21,7 @@ export default function SafetyPage() {
   return (
     <ArticleLayout
       title="Насколько безопасна платформа Pocket Option?"
+      description="Анализ безопасности Pocket Option: защита данных, хранение средств, SSL-шифрование, двухфакторная аутентификация и политика вывода."
       slug="/safety"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

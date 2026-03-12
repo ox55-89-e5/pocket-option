@@ -21,6 +21,7 @@ export default function DepositPage() {
   return (
     <ArticleLayout
       title="Пополнение счёта Pocket Option: минимальный депозит и способы ввода"
+      description="Как пополнить счёт Pocket Option: минимальный депозит 10$, банковские карты, криптовалюта, электронные кошельки. Пошаговая инструкция без комиссии."
       slug="/deposit"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

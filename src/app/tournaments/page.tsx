@@ -21,6 +21,7 @@ export default function TournamentsPage() {
   return (
     <ArticleLayout
       title="Как участвовать в турнирах на Pocket Option?"
+      description="Как принять участие в турнирах Pocket Option: условия, призовые фонды, стратегии для победы в соревнованиях трейдеров."
       slug="/tournaments"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

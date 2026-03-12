@@ -21,6 +21,7 @@ export default function RecoveryPasswordPage() {
   return (
     <ArticleLayout
       title="Восстановление пароля Pocket Option"
+      description="Как восстановить пароль от аккаунта Pocket Option через email или телефон. Что делать если письмо не приходит, и как защитить аккаунт после смены."
       slug="/recovery-password"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

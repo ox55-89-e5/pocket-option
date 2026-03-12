@@ -21,6 +21,7 @@ export default function WithdrawPage() {
   return (
     <ArticleLayout
       title="Как вывести деньги с Pocket Option на карту"
+      description="Пошаговая инструкция по выводу средств с Pocket Option на банковскую карту. Лимиты, комиссии, причины задержек и чек-лист перед выводом."
       slug="/withdraw"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

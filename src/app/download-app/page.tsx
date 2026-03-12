@@ -21,6 +21,7 @@ export default function DownloadAppPage() {
   return (
     <ArticleLayout
       title="Где скачать приложение Pocket Option на iPhone и Android"
+      description="Как скачать приложение Pocket Option на Android (APK) и iPhone (App Store). Официальные источники, инструкции по установке и решение проблем."
       slug="/download-app"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

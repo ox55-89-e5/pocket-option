@@ -21,6 +21,7 @@ export default function ActivatePromocodePage() {
   return (
     <ArticleLayout
       title="Как активировать промокод Pocket Option и получить бонус"
+      description="Как активировать промокод Pocket Option: где найти поле ввода, актуальные коды START100, WEEKLY30, BONUS50 и что делать, если промокод не активируется."
       slug="/activate-promocode"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

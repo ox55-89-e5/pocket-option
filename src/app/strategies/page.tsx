@@ -21,6 +21,7 @@ export default function StrategiesPage() {
   return (
     <ArticleLayout
       title="Какие стратегии торговли работают на Pocket Option"
+      description="Лучшие стратегии торговли бинарными опционами на Pocket Option: трендовые, контртрендовые, канальные, Price Action и новостные стратегии с правилами входа."
       slug="/strategies"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

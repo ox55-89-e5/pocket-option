@@ -21,6 +21,7 @@ export default function ReviewsPage() {
   return (
     <ArticleLayout
       title="Где почитать отзывы о платформе Pocket Option?"
+      description="Реальные отзывы о платформе Pocket Option от трейдеров: плюсы и минусы, надёжность, вывод средств, техподдержка."
       slug="/reviews"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

@@ -21,6 +21,7 @@ export default function NoDepositBonusPage() {
   return (
     <ArticleLayout
       title="Дают ли бонус без депозита в Pocket Option — условия и вывод"
+      description="Дают ли бонус без депозита в Pocket Option? Виды бездепозитных бонусов, условия получения, отыгрыш и вывод прибыли."
       slug="/no-deposit-bonus"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

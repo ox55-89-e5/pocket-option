@@ -21,6 +21,7 @@ export default function AppReviewsPage() {
   return (
     <ArticleLayout
       title="Какие отзывы о мобильном приложении Pocket Option?"
+      description="Реальные отзывы пользователей о мобильном приложении Pocket Option: удобство, скорость, функционал на iPhone и Android."
       slug="/app-reviews"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

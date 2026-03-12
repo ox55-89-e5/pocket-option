@@ -21,6 +21,7 @@ export default function BeginnerPage() {
   return (
     <ArticleLayout
       title="С чего начать новичку на платформе Pocket Option?"
+      description="Полное руководство для новичков на Pocket Option: регистрация, демо-счёт, первые сделки, советы по торговле."
       slug="/beginner"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

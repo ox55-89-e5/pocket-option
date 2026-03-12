@@ -21,6 +21,7 @@ export default function WebVersionPage() {
   return (
     <ArticleLayout
       title="Что такое веб-версия платформы Pocket Option?"
+      description="Что такое веб-версия Pocket Option, как пользоваться платформой через браузер и чем она отличается от мобильного приложения."
       slug="/web-version"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

@@ -2,6 +2,8 @@ import Link from 'next/link';
 import styles from './ArticleLayout.module.css';
 import { ctaLinks } from '@/lib/ctaLinks';
 
+const SITE_URL = 'https://pocoptrade.com';
+
 interface Breadcrumb {
   label: string;
   href?: string;
@@ -9,16 +11,59 @@ interface Breadcrumb {
 
 interface ArticleLayoutProps {
   title: string;
+  description?: string;
   breadcrumbs: Breadcrumb[];
   slug: string;
   children: React.ReactNode;
 }
 
-export default function ArticleLayout({ title, breadcrumbs, slug, children }: ArticleLayoutProps) {
+export default function ArticleLayout({ title, description, breadcrumbs, slug, children }: ArticleLayoutProps) {
   const cta = ctaLinks[slug] ?? null;
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((crumb, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: crumb.label,
+      item: crumb.href ? `${SITE_URL}${crumb.href}` : undefined,
+    })),
+  };
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    ...(description ? { description } : {}),
+    url: `${SITE_URL}${slug}`,
+    inLanguage: 'ru',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Pocket Option',
+      url: SITE_URL,
+    },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbs.map((crumb, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: crumb.label,
+        item: crumb.href ? `${SITE_URL}${crumb.href}` : undefined,
+      })),
+    },
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <section className={styles.hero}>
         <div className="container">
           <nav className={styles.breadcrumb} aria-label="Breadcrumb">

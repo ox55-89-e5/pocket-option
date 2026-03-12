@@ -21,6 +21,7 @@ export default function MirrorPage() {
   return (
     <ArticleLayout
       title="Почему Pocket Option не работает и как найти зеркало?"
+      description="Почему Pocket Option не работает и как найти рабочее зеркало сайта для входа в аккаунт."
       slug="/mirror"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

@@ -21,6 +21,7 @@ export default function AiModePage() {
   return (
     <ArticleLayout
       title="Что такое AI Mode на Pocket Option?"
+      description="Что такое AI Mode на Pocket Option: автоматические торговые сигналы на основе искусственного интеллекта, как включить и использовать."
       slug="/aimode"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

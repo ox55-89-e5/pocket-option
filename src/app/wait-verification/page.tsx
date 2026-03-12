@@ -21,6 +21,7 @@ export default function WaitVerificationPage() {
   return (
     <ArticleLayout
       title="Сколько ждать верификацию на Pocket Option?"
+      description="Сколько времени занимает верификация аккаунта на Pocket Option, какие статусы бывают и что делать если верификация затянулась."
       slug="/wait-verification"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

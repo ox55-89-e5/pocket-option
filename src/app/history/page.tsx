@@ -21,6 +21,7 @@ export default function HistoryPage() {
   return (
     <ArticleLayout
       title="Где найти историю операций на Pocket Option?"
+      description="Где найти историю сделок и операций на Pocket Option, как скачать отчёт и что делать если операция не отображается."
       slug="/history"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

@@ -21,6 +21,7 @@ export default function LicensePage() {
   return (
     <ArticleLayout
       title="Есть ли у Pocket Option лицензия"
+      description="Есть ли у Pocket Option лицензия? Регистрация в Сент-Винсент и Гренадины, сертификат IFMRG, почему нет лицензии ЦБ РФ и что это значит для трейдера."
       slug="/license"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

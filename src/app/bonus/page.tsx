@@ -21,6 +21,7 @@ export default function BonusPage() {
   return (
     <ArticleLayout
       title="Какой бонус дают за регистрацию в Pocket Option?"
+      description="Какой бонус дают за регистрацию в Pocket Option: 175% на первый депозит до 10 000$. Как активировать, что такое вейджер и как вывести прибыль с бонуса."
       slug="/bonus"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

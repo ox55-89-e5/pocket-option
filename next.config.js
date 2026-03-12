@@ -18,11 +18,11 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      { source: '/signup',   destination: EXTERNAL.signup,   permanent: false },
-      { source: '/lk',      destination: EXTERNAL.lk,      permanent: false },
-      { source: '/aff',     destination: EXTERNAL.aff,     permanent: false },
-      { source: '/download', destination: EXTERNAL.download, permanent: false },
-      { source: '/demo',    destination: EXTERNAL.demo,    permanent: false },
+      { source: '/signup',   destination: EXTERNAL.signup,   permanent: true },
+      { source: '/lk',      destination: EXTERNAL.lk,      permanent: true },
+      { source: '/aff',     destination: EXTERNAL.aff,     permanent: true },
+      { source: '/download', destination: EXTERNAL.download, permanent: true },
+      { source: '/demo',    destination: EXTERNAL.demo,    permanent: true },
     ];
   },
   async headers() {

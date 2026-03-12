@@ -21,6 +21,7 @@ export default function TrainingPage() {
   return (
     <ArticleLayout
       title="Где пройти обучение трейдингу на Pocket Option?"
+      description="Как пройти обучение трейдингу на платформе Pocket Option: видеоуроки, вебинары, учебные материалы для начинающих и продвинутых."
       slug="/training"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

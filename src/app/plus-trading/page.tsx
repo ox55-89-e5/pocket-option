@@ -21,6 +21,7 @@ export default function PlusTradingPage() {
   return (
     <ArticleLayout
       title="Как торговать в плюс на Pocket Option: стратегии и психология"
+      description="Как стабильно зарабатывать на Pocket Option: управление капиталом, рабочие стратегии, психология трейдинга и почему большинство теряет деньги."
       slug="/plus-trading"
       breadcrumbs={[
         { label: 'Главная', href: '/' },

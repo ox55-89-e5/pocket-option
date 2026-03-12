@@ -21,6 +21,7 @@ export default function AffiliatePage() {
   return (
     <ArticleLayout
       title="Как зарабатывать на партнёрской программе Pocket Option?"
+      description="Как работает партнёрская программа Pocket Option: условия, комиссии, способы привлечения трейдеров и вывода заработанного."
       slug="/affiliate"
       breadcrumbs={[
         { label: 'Главная', href: '/' },
