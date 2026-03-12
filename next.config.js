@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 
 const EXTERNAL = {
-  signup: 'https://po-fcm.com/ru/register/',
-  lk:     'https://po-fcm.com/ru/register/',
-  aff:    'https://cleveraff.com/',
+  signup:   'https://po-fcm.com/ru/register/',
+  lk:       'https://po-fcm.com/ru/register/',
+  aff:      'https://cleveraff.com/',
+  download: 'https://po-fcm.com/ru/register/',
+  demo:     'https://po-fcm.com/ru/register/',
 };
 
 const nextConfig = {
@@ -16,9 +18,11 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      { source: '/signup', destination: EXTERNAL.signup, permanent: false },
-      { source: '/lk',     destination: EXTERNAL.lk,     permanent: false },
-      { source: '/aff',    destination: EXTERNAL.aff,    permanent: false },
+      { source: '/signup',   destination: EXTERNAL.signup,   permanent: false },
+      { source: '/lk',      destination: EXTERNAL.lk,      permanent: false },
+      { source: '/aff',     destination: EXTERNAL.aff,     permanent: false },
+      { source: '/download', destination: EXTERNAL.download, permanent: false },
+      { source: '/demo',    destination: EXTERNAL.demo,    permanent: false },
     ];
   },
   async headers() {

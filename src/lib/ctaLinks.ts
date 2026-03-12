@@ -14,6 +14,7 @@ export const ctaLinks: Record<string, { href: string; label: string }> = {
   '/withdraw':           { href: '/signup', label: 'Вывести средства' },
   '/withdrawal-fees':    { href: '/signup', label: 'Перейти к выводу' },
   '/download-app':       { href: '/lk',     label: 'Скачать приложение' },
+  '/app':                { href: '/download', label: 'Скачать приложение' },
   '/app-reviews':        { href: '/lk',     label: 'Открыть платформу' },
   '/web-version':        { href: '/lk',     label: 'Открыть веб-версию' },
   '/bonus':              { href: '/lk',     label: 'Получить бонус' },

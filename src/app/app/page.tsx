@@ -114,30 +114,26 @@ export default function AppPage() {
               смартфоне
             </p>
             <div className={styles.heroBtns}>
-              <a
-                href="https://apps.apple.com/app/pocket-option"
+              <Link
+                href="/download"
                 className={`btn btn-primary btn-lg ${styles.storeBtnIos}`}
-                target="_blank"
-                rel="noopener noreferrer"
               >
-                <span className={styles.storeIcon}>🍎</span>
+                <span className={styles.storeIcon}>📲</span>
                 <span>
-                  <span className={styles.storeSub}>Загрузить в</span>
-                  <span className={styles.storeName}>App Store</span>
+                  <span className={styles.storeSub}>Скачать приложение</span>
+                  <span className={styles.storeName}>iOS & Android</span>
                 </span>
-              </a>
-              <a
-                href="https://play.google.com/store/apps/pocket-option"
-                className={`btn btn-primary btn-lg ${styles.storeBtnAndroid}`}
-                target="_blank"
-                rel="noopener noreferrer"
+              </Link>
+              <Link
+                href="/demo"
+                className={`btn btn-outline btn-lg ${styles.storeBtnAndroid}`}
               >
-                <span className={styles.storeIcon}>▶</span>
+                <span className={styles.storeIcon}>🎮</span>
                 <span>
-                  <span className={styles.storeSub}>Загрузить в</span>
-                  <span className={styles.storeName}>Google Play</span>
+                  <span className={styles.storeSub}>Попробовать бесплатно</span>
+                  <span className={styles.storeName}>Демо-счёт</span>
                 </span>
-              </a>
+              </Link>
             </div>
 
             <div className="stats-row">
@@ -186,14 +182,9 @@ export default function AppPage() {
                 торговая платформа. Вы получаете те же графики, индикаторы, активы и инструменты
                 анализа, что и в десктопной версии.
               </p>
-              <a
-                href="https://pocoptrade.com/register"
-                className="btn btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="/download" className="btn btn-primary">
                 Начать торговать
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -291,24 +282,11 @@ export default function AppPage() {
               Бесплатно. Демо-счёт 10 000$. Без регистрации — в два тапа.
             </p>
             <div className={styles.ctaBtns}>
-              <a
-                href="https://apps.apple.com/app/pocket-option"
-                className="btn btn-primary btn-lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                🍎 App Store
-              </a>
-              <a
-                href="https://play.google.com/store/apps/pocket-option"
-                className="btn btn-primary btn-lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ▶ Google Play
-              </a>
-              <Link href="/" className="btn btn-outline btn-lg">
-                На главную
+              <Link href="/download" className="btn btn-primary btn-lg">
+                📲 Скачать приложение
+              </Link>
+              <Link href="/demo" className="btn btn-outline btn-lg">
+                🎮 Открыть демо-счёт
               </Link>
             </div>
           </div>
