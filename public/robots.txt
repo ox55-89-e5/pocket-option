@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+User-agent: Yandex
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+Sitemap: https://fpa-group.ru/sitemap.xml

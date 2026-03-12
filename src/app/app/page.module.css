@@ -1,0 +1,263 @@
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(160deg, #0d1528 0%, #0a0e1a 60%);
+  padding: 96px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -160px;
+  right: -160px;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(30, 144, 255, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroContent {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heroTitle {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.heroSubtext {
+  font-size: 1.1rem;
+  color: #d3e4ff;
+  line-height: 1.65;
+  max-width: 580px;
+}
+
+.heroBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* Store buttons */
+.storeBtnIos,
+.storeBtnAndroid {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+}
+
+.storeIcon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.storeSub {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  opacity: 0.85;
+  line-height: 1;
+}
+
+.storeName {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* ── FEATURES ── */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.featureHighlight {
+  background: #0f1a2a;
+  border: 1px solid rgba(30, 144, 255, 0.2);
+  border-radius: 16px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.highlightIcon {
+  font-size: 3rem;
+}
+
+.highlightTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.highlightText {
+  font-size: 0.96rem;
+  color: #d3e4ff;
+  line-height: 1.7;
+}
+
+/* ── PUSH NOTIFICATIONS ── */
+.pushSection {
+  background: linear-gradient(180deg, #0a0e1a 0%, #0c1220 100%);
+}
+
+.pushGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.pushVisual {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notifCard {
+  background: #0f1a2a;
+  border: 1px solid rgba(30, 144, 255, 0.22);
+  border-radius: 12px;
+  padding: 16px 20px;
+  transform: translateX(0);
+  transition: transform 0.2s ease;
+}
+.notifCard2 {
+  transform: translateX(20px);
+}
+.notifCard3 {
+  transform: translateX(10px);
+}
+
+.notifHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.notifApp {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #1e90ff;
+}
+
+.notifTime {
+  font-size: 0.75rem;
+  color: rgba(211, 228, 255, 0.45);
+}
+
+.notifText {
+  font-size: 0.92rem;
+  color: #eaf1ff;
+}
+
+.pushText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pushDesc {
+  font-size: 1rem;
+  color: #d3e4ff;
+  line-height: 1.65;
+}
+
+/* ── WHAT'S NEW ── */
+.newTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.newDesc {
+  font-size: 0.92rem;
+  color: #d3e4ff;
+  line-height: 1.6;
+}
+
+/* ── FAQ ── */
+.faqSection {
+  background: linear-gradient(180deg, #0c1220 0%, #0a0e1a 100%);
+}
+
+/* ── CTA ── */
+.ctaSection {
+  background: linear-gradient(160deg, #0c1829 0%, #0a0e1a 100%);
+}
+
+.ctaBox {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ctaTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.ctaText {
+  font-size: 1rem;
+  color: #d3e4ff;
+}
+
+.ctaBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1100px) {
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .pushGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .heroSubtext {
+    font-size: 0.97rem;
+  }
+  .heroBtns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .notifCard2,
+  .notifCard3 {
+    transform: none;
+  }
+  .ctaTitle {
+    font-size: 1.55rem;
+  }
+  .ctaBtns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
