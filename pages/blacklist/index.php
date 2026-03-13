@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Pocket Option в черном списке ЦБ — что это означает для трейдера';
 $description = 'Почему Pocket Option в чёрном списке Банка России, что это значит на практике и насколько безопасна платформа для российских трейдеров.';
 $canonical = $SITE_URL . '/blacklist/';

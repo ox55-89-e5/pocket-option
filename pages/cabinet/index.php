@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Личный кабинет Pocket Option — вход, настройки, безопасность';
 $description = 'Личный кабинет Pocket Option: вход через email или Google, верификация, пополнение и вывод, двухфакторная аутентификация. Управляйте счётом 24/7.';
 $canonical = $SITE_URL . '/cabinet/';
@@ -118,8 +118,8 @@ require_once dirname(__DIR__, 2) . '/includes/header.php';
       <h1 class="cab-hero-title">Личный кабинет Pocket Option</h1>
       <p class="cab-hero-subtext">Управляйте счётом, настраивайте безопасность и отслеживайте статистику</p>
       <div class="cab-hero-btns">
-        <a href="https://pocoptrade.com/login" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Войти в кабинет</a>
-        <a href="https://pocoptrade.com/register" class="btn btn-outline btn-lg" target="_blank" rel="noopener noreferrer">Регистрация</a>
+        <a href="https://pocketoption-po.com/login" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Войти в кабинет</a>
+        <a href="https://pocketoption-po.com/register" class="btn btn-outline btn-lg" target="_blank" rel="noopener noreferrer">Регистрация</a>
       </div>
     </div>
   </div>
@@ -310,7 +310,7 @@ require_once dirname(__DIR__, 2) . '/includes/header.php';
         <div class="card">
           <h3 class="support-card-title">Связаться с поддержкой</h3>
           <div class="support-btns">
-            <a href="https://pocoptrade.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">💬 Онлайн-чат</a>
+            <a href="https://pocketoption-po.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">💬 Онлайн-чат</a>
             <a href="mailto:support@pocketoption.com" class="btn btn-outline">✉️ Email</a>
             <a href="/faq/" class="btn btn-outline">📖 FAQ</a>
           </div>
@@ -326,7 +326,7 @@ require_once dirname(__DIR__, 2) . '/includes/header.php';
     <div class="cab-cta-box">
       <h2 class="cab-cta-title">Войдите в личный кабинет</h2>
       <p class="cab-cta-text">Управляйте счётом, пополняйте и выводите средства, настраивайте безопасность</p>
-      <a href="https://pocoptrade.com/login" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Войти в кабинет</a>
+      <a href="https://pocketoption-po.com/login" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Войти в кабинет</a>
     </div>
   </div>
 </section>

@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Бездепозитный бонус Pocket Option — как получить без вложений';
 $description = 'Бездепозитный бонус Pocket Option: как получить деньги на торговлю без пополнения счёта, условия активации и вывода прибыли.';
 $canonical = $SITE_URL . '/no-deposit-bonus/';

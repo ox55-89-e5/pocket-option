@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Обучение торговле на Pocket Option — с чего начать';
 $description = 'Как обучиться торговле бинарными опционами на Pocket Option: обучающие материалы, вебинары, демо-счёт и стратегии для начинающих.';
 $canonical = $SITE_URL . '/training/';

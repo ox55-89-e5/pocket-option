@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Скачать приложение Pocket Option на Android и iPhone — 2026';
 $description = 'Как скачать приложение Pocket Option на Android (APK) и iPhone (App Store). Официальные источники, инструкции по установке и решение проблем.';
 $canonical = $SITE_URL . '/download-app/';

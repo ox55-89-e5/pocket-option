@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Двухфакторная аутентификация Pocket Option — как включить 2FA';
 $description = 'Как включить и настроить двухфакторную аутентификацию (2FA) на Pocket Option для защиты аккаунта.';
 $canonical = $SITE_URL . '/2fa/';

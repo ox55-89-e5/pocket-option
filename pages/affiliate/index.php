@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Партнёрская программа Pocket Option — как зарабатывать на рефералах';
 $description = 'Как работает партнёрская программа Pocket Option: условия, комиссии, способы привлечения трейдеров и вывода заработанного.';
 $canonical = $SITE_URL . '/affiliate/';

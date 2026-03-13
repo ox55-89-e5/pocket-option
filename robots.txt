@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pocoptrade.com/sitemap.xml
+Sitemap: https://pocketoption-po.com/sitemap.xml

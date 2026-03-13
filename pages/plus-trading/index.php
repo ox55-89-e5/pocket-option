@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Как торговать в плюс на Pocket Option — стратегии прибыльной торговли';
 $description = 'Как стабильно торговать в плюс на Pocket Option: управление капиталом, психология трейдера, лучшие стратегии и типичные ошибки.';
 $canonical = $SITE_URL . '/plus-trading/';

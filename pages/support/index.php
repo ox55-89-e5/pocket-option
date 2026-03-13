@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Служба поддержки Pocket Option: как связаться на русском 24/7';
 $description = 'Как связаться с поддержкой Pocket Option на русском: онлайн-чат, email, Telegram. Время ответа, восстановление доступа и решение частых проблем.';
 $canonical = $SITE_URL . '/support/';

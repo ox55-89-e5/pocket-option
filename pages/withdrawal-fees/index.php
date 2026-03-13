@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Комиссия за вывод Pocket Option и лимиты на вывод средств';
 $description = 'Есть ли комиссия за вывод средств с Pocket Option? Лимиты для верифицированных и неверифицированных аккаунтов, сроки и способы вывода.';
 $canonical = $SITE_URL . '/withdrawal-fees/';

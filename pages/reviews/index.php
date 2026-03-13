@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Отзывы о Pocket Option — реальные мнения трейдеров 2026';
 $description = 'Реальные отзывы о платформе Pocket Option: плюсы и минусы по мнению трейдеров, рейтинг надёжности и честные оценки.';
 $canonical = $SITE_URL . '/reviews/';

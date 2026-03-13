@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Верификация Pocket Option: можно ли торговать без верификации';
 $description = 'Можно ли торговать в Pocket Option без верификации? Лимиты на вывод, пошаговая инструкция по верификации и риски анонимной торговли.';
 $canonical = $SITE_URL . '/verification/';

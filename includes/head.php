@@ -6,7 +6,7 @@ $og_title = $og_title ?? $title;
 $og_description = $og_description ?? $description;
 $og_type = $og_type ?? 'website';
 $keywords = $keywords ?? 'Pocket Option, бинарные опционы, торговля бинарными опционами, демо счет, промокоды Pocket Option, скачать Pocket Option';
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $SITE_NAME = 'Pocket Option';
 
 $organization_schema = json_encode([

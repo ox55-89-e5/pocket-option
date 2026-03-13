@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'История сделок Pocket Option — как посмотреть и скачать';
 $description = 'Как просмотреть историю сделок и транзакций в Pocket Option: где найти раздел, как фильтровать операции и скачать отчёт.';
 $canonical = $SITE_URL . '/history/';

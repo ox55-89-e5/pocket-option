@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Копирование сделок Pocket Option: как подключить и настроить';
 $description = 'Как работает копирование сделок в Pocket Option: алгоритм, выбор трейдера, лимиты, риски и пошаговая инструкция подключения.';
 $canonical = $SITE_URL . '/copy-trading/';

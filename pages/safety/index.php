@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Безопасность Pocket Option — насколько надёжна платформа';
 $description = 'Насколько безопасна платформа Pocket Option: защита средств, шифрование, верификация и меры защиты аккаунта.';
 $canonical = $SITE_URL . '/safety/';

@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Турниры на Pocket Option — как участвовать и выиграть';
 $description = 'Как принять участие в торговых турнирах Pocket Option: условия, призовой фонд, стратегии победы и расписание.';
 $canonical = $SITE_URL . '/tournaments/';

@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Как вывести деньги с Pocket Option на карту — инструкция 2026';
 $description = 'Пошаговая инструкция по выводу средств с Pocket Option на банковскую карту. Лимиты, комиссии, причины задержек и чек-лист перед выводом.';
 $canonical = $SITE_URL . '/withdraw/';

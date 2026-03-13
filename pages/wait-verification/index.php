@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Pocket Option ожидание верификации — что делать и сколько ждать';
 $description = 'Сколько ждать верификацию Pocket Option, как проверить статус и что делать если верификация затянулась.';
 $canonical = $SITE_URL . '/wait-verification/';

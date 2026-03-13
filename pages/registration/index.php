@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Регистрация в Pocket Option: пошаговая инструкция 2026';
 $description = 'Как зарегистрироваться в Pocket Option: через email или Google за 1 минуту. Демо-счёт 10 000$ и бонус START100 сразу после регистрации.';
 $canonical = $SITE_URL . '/registration/';

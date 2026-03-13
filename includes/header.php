@@ -13,8 +13,8 @@
 
     <!-- Desktop CTA buttons -->
     <div class="header-cta">
-      <a href="https://pocoptrade.com/login" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Вход</a>
-      <a href="https://pocoptrade.com/register" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Регистрация</a>
+      <a href="https://pocketoption-po.com/login" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Вход</a>
+      <a href="https://pocketoption-po.com/register" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Регистрация</a>
     </div>
 
     <!-- Burger button -->
@@ -32,8 +32,8 @@
       <a href="/faq/" class="mobile-link">FAQ</a>
     </nav>
     <div class="mobile-cta">
-      <a href="https://pocoptrade.com/login" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Вход</a>
-      <a href="https://pocoptrade.com/register" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Регистрация</a>
+      <a href="https://pocketoption-po.com/login" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Вход</a>
+      <a href="https://pocketoption-po.com/register" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Регистрация</a>
     </div>
   </div>
 </header>

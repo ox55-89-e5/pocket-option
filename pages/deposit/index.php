@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Пополнение счёта Pocket Option: минимальный депозит и способы 2026';
 $description = 'Как пополнить счёт Pocket Option: минимальный депозит 10$, банковские карты, криптовалюта, электронные кошельки. Пошаговая инструкция без комиссии.';
 $canonical = $SITE_URL . '/deposit/';

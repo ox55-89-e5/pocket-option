@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Веб-версия Pocket Option — торговля через браузер';
 $description = 'Как пользоваться веб-версией Pocket Option: преимущества, отличия от приложения и как войти без установки.';
 $canonical = $SITE_URL . '/web-version/';

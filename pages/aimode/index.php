@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'AI Mode на Pocket Option — что такое и как работает';
 $description = 'Что такое AI Mode на Pocket Option: автоматические торговые сигналы на основе искусственного интеллекта, как включить и использовать.';
 $canonical = $SITE_URL . '/aimode/';

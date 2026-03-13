@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Отзывы о мобильном приложении Pocket Option — iOS и Android';
 $description = 'Реальные отзывы пользователей о мобильном приложении Pocket Option: удобство, скорость, функционал на iPhone и Android.';
 $canonical = $SITE_URL . '/app-reviews/';

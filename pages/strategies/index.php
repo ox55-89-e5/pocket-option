@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Стратегии торговли на Pocket Option: что работает в 2026';
 $description = 'Лучшие стратегии торговли бинарными опционами на Pocket Option: трендовые, контртрендовые, канальные, Price Action и новостные стратегии с правилами входа.';
 $canonical = $SITE_URL . '/strategies/';

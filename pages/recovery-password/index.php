@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Восстановление пароля Pocket Option: что делать если забыл';
 $description = 'Как восстановить пароль от аккаунта Pocket Option через email или телефон. Что делать если письмо не приходит, и как защитить аккаунт после смены.';
 $canonical = $SITE_URL . '/recovery-password/';

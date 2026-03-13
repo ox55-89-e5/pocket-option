@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Бонус за регистрацию Pocket Option: 175% на первый депозит';
 $description = 'Какой бонус дают за регистрацию в Pocket Option: 175% на первый депозит до 10 000$. Как активировать, что такое вейджер и как вывести прибыль с бонуса.';
 $canonical = $SITE_URL . '/bonus/';

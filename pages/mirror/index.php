@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Зеркало Pocket Option — как войти если сайт заблокирован';
 $description = 'Как войти на Pocket Option если основной сайт заблокирован: рабочие зеркала, VPN и официальные способы обхода блокировки в 2026.';
 $canonical = $SITE_URL . '/mirror/';

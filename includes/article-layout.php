@@ -9,7 +9,7 @@
 
 require_once __DIR__ . '/cta-links.php';
 
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $cta = get_cta($article_slug);
 
 // JSON-LD schemas

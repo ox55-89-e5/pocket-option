@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Кешбэк Pocket Option: как получить и условия программы 2026';
 $description = 'Что такое кешбэк в Pocket Option и как его получить: процент возврата по статусам, инструкция активации, условия вывода и сравнение с бонусами.';
 $canonical = $SITE_URL . '/cashback/';

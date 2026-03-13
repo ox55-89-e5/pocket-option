@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Индикаторы Pocket Option — какие есть и как использовать';
 $description = 'Какие технические индикаторы доступны на Pocket Option: RSI, MACD, Bollinger Bands и другие. Как выбрать и применять в торговле.';
 $canonical = $SITE_URL . '/indicators/';

@@ -1,5 +1,5 @@
 <?php
-$SITE_URL = 'https://pocoptrade.com';
+$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Лицензия Pocket Option — регуляция и надёжность брокера';
 $description = 'Лицензия и регуляция Pocket Option: IFMRRC, Mwali International Services Authority. Насколько надёжна платформа и как проверить лицензию.';
 $canonical = $SITE_URL . '/license/';
