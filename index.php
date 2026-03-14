@@ -20,7 +20,7 @@ $redirects = [
 ];
 
 if (isset($redirects[$uri])) {
-    header('Location: ' . $redirects[$uri], true, 301);
+    header('Location: ' . $redirects[$uri], true, 302);
     exit;
 }
 
