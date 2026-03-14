@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Служба поддержки Pocket Option: как связаться на русском 24/7';
 $description = 'Как связаться с поддержкой Pocket Option на русском: онлайн-чат, email, Telegram. Время ответа, восстановление доступа и решение частых проблем.';
-$canonical = $SITE_URL . '/support/';
+$canonical = SITE_URL . '/support/';
 $og_type = 'article';
 require_once dirname(__DIR__, 2) . '/includes/head.php';
 require_once dirname(__DIR__, 2) . '/includes/header.php';
@@ -44,6 +44,7 @@ ob_start();
   <details class="faq-item"><summary>Снимают ли деньги за обращение в поддержку?</summary><div class="faq-answer">Нет, все консультации бесплатны. Если кто-то требует оплату — это мошенники.</div></details>
 </div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

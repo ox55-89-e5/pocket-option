@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Зеркало Pocket Option — как войти если сайт заблокирован';
 $description = 'Как войти на Pocket Option если основной сайт заблокирован: рабочие зеркала, VPN и официальные способы обхода блокировки в 2026.';
-$canonical = $SITE_URL . '/mirror/';
+$canonical = SITE_URL . '/mirror/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -36,6 +36,7 @@ ob_start();
 
 <div class="notice">💡 Всегда используйте только официальные ссылки Pocket Option. Фишинговые сайты копируют дизайн платформы для кражи данных аккаунта.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

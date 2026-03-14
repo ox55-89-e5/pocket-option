@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/includes/links.php';
+
 // ── ROUTER ──
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri = rtrim($uri, '/');
@@ -10,11 +12,11 @@ if ($uri !== '' && file_exists(__DIR__ . $uri) && !is_dir(__DIR__ . $uri)) {
 
 // Redirect rules
 $redirects = [
-    '/signup'   => 'https://po-fcm.com/ru/register/',
-    '/lk'       => 'https://po-fcm.com/ru/register/',
-    '/aff'      => 'https://cleveraff.com/',
-    '/download' => 'https://po-fcm.com/ru/register/',
-    '/demo'     => 'https://po-fcm.com/ru/register/',
+    '/signup'   => LINK_REGISTER,
+    '/lk'       => LINK_LOGIN,
+    '/aff'      => LINK_AFFILIATE,
+    '/download' => LINK_DOWNLOAD,
+    '/demo'     => LINK_DEMO,
 ];
 
 if (isset($redirects[$uri])) {
@@ -37,21 +39,20 @@ if ($uri !== '' && $uri !== '/') {
 }
 
 // ── HOMEPAGE ──
-$SITE_URL = 'https://pocketoption-po.com';
 $title = 'Pocket Option официальный сайт — торговля бинарными опционами';
 $description = 'Pocket Option — интуитивная платформа с демо-счетом 10 000$. 150+ активов, выплата 92%. Начните торговлю бинарными опционами без вложений.';
-$canonical = $SITE_URL;
+$canonical = SITE_URL;
 $og_type = 'website';
 
 $page_schema = json_encode([
   '@context' => 'https://schema.org',
   '@type' => 'WebSite',
   'name' => 'Pocket Option',
-  'url' => $SITE_URL,
+  'url' => SITE_URL,
   'description' => 'Торговля бинарными опционами. Демо-счёт 10 000$, 150+ активов, выплата 92%.',
   'potentialAction' => [
     '@type' => 'SearchAction',
-    'target' => $SITE_URL . '/faq/?q={search_term_string}',
+    'target' => SITE_URL . '/faq/?q={search_term_string}',
     'query-input' => 'required name=search_term_string',
   ],
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
@@ -68,8 +69,8 @@ require_once __DIR__ . '/includes/header.php';
       <h1 class="hero-title">Pocket Option официальный сайт</h1>
       <p class="hero-subtext">Интуитивная платформа с демо-счетом 10&nbsp;000$ — начните торговлю бинарными опционами прямо сейчас без вложений</p>
       <div class="hero-btns">
-        <a href="https://pocketoption-po.com/register" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Начать торговлю</a>
-        <a href="https://pocketoption-po.com/demo" class="btn btn-outline btn-lg" target="_blank" rel="noopener noreferrer">Онлайн демо</a>
+        <a href="/signup/" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Начать торговлю</a>
+        <a href="/demo/" class="btn btn-outline btn-lg" target="_blank" rel="noopener noreferrer">Онлайн демо</a>
       </div>
       <div class="stats-row hero-stats">
         <div class="stat-item"><span class="stat-value">2+ млн</span><span class="stat-label">трейдеров</span></div>
@@ -172,17 +173,17 @@ require_once __DIR__ . '/includes/header.php';
       <div class="card card-2 promo-card">
         <div class="promo-top"><span class="promo-code">START100</span><span class="badge">до 500$</span></div>
         <p class="promo-bonus">+100% к депозиту</p>
-        <a href="https://pocketoption-po.com/register" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Активировать</a>
+        <a href="/signup/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Активировать</a>
       </div>
       <div class="card card-2 promo-card">
         <div class="promo-top"><span class="promo-code">POCKET50</span><span class="badge">Без лимита</span></div>
         <p class="promo-bonus">+50% к депозиту</p>
-        <a href="https://pocketoption-po.com/register" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Активировать</a>
+        <a href="/signup/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Активировать</a>
       </div>
       <div class="card card-2 promo-card">
         <div class="promo-top"><span class="promo-code">CASHBACK20</span><span class="badge">Еженедельно</span></div>
         <p class="promo-bonus">20% кешбэк</p>
-        <a href="https://pocketoption-po.com/register" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Активировать</a>
+        <a href="/signup/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Активировать</a>
       </div>
     </div>
     <div class="all-promos">
@@ -203,7 +204,7 @@ require_once __DIR__ . '/includes/header.php';
           <span class="demo-stat-icon">📊</span>
           <p>Трейдеры, торговавшие 3+ дня на демо, показывают результат в <strong>2.5 раза лучше</strong></p>
         </div>
-        <a href="https://pocketoption-po.com/demo" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Попробовать демо</a>
+        <a href="/demo/" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Попробовать демо</a>
       </div>
       <div class="demo-visual">
         <div class="demo-amount">

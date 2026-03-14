@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Пополнение счёта Pocket Option: минимальный депозит и способы 2026';
 $description = 'Как пополнить счёт Pocket Option: минимальный депозит 10$, банковские карты, криптовалюта, электронные кошельки. Пошаговая инструкция без комиссии.';
-$canonical = $SITE_URL . '/deposit/';
+$canonical = SITE_URL . '/deposit/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -62,6 +62,7 @@ ob_start();
   <details class="faq-item"><summary>Можно ли пополнить счёт в рублях?</summary><div class="faq-answer">Да, через карты МИР и некоторые электронные кошельки доступно пополнение в рублях с автоматической конвертацией по курсу платформы.</div></details>
 </div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Копирование сделок Pocket Option: как подключить и настроить';
 $description = 'Как работает копирование сделок в Pocket Option: алгоритм, выбор трейдера, лимиты, риски и пошаговая инструкция подключения.';
-$canonical = $SITE_URL . '/copy-trading/';
+$canonical = SITE_URL . '/copy-trading/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -54,6 +54,7 @@ ob_start();
   <details class="faq-item"><summary>Можно ли копировать на демо-счёте?</summary><div class="faq-answer">Функция доступна на реальном счёте после пополнения.</div></details>
 </div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

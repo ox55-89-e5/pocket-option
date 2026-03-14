@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Двухфакторная аутентификация Pocket Option — как включить 2FA';
 $description = 'Как включить и настроить двухфакторную аутентификацию (2FA) на Pocket Option для защиты аккаунта.';
-$canonical = $SITE_URL . '/2fa/';
+$canonical = SITE_URL . '/2fa/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -42,6 +42,7 @@ ob_start();
 <h2>Что делать если потерял доступ к 2FA</h2>
 <p>Обратитесь в службу поддержки. Потребуется пройти верификацию личности для подтверждения владения аккаунтом.</p>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

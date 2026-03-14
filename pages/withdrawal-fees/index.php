@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Комиссия за вывод Pocket Option и лимиты на вывод средств';
 $description = 'Есть ли комиссия за вывод средств с Pocket Option? Лимиты для верифицированных и неверифицированных аккаунтов, сроки и способы вывода.';
-$canonical = $SITE_URL . '/withdrawal-fees/';
+$canonical = SITE_URL . '/withdrawal-fees/';
 $og_type = 'article';
 require_once dirname(__DIR__, 2) . '/includes/head.php';
 require_once dirname(__DIR__, 2) . '/includes/header.php';
@@ -138,6 +138,7 @@ ob_start();
 </div>
 
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

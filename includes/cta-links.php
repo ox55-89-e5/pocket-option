@@ -1,11 +1,9 @@
 <?php
 /**
  * CTA button mapping: page slug → [href, label]
- * Redirects are handled by .htaccess:
- *   /signup/ → https://po-fcm.com/ru/register/
- *   /lk/     → https://po-fcm.com/ru/register/
- *   /aff/    → https://cleveraff.com/
+ * Redirect destinations are defined in includes/links.php
  */
+require_once __DIR__ . '/links.php';
 $cta_links = [
   '/registration/'       => ['href' => '/signup/',   'label' => 'Зарегистрироваться'],
   '/recovery-password/'  => ['href' => '/lk/',       'label' => 'Войти в кабинет'],

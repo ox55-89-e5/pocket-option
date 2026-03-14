@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Бонус за регистрацию Pocket Option: 175% на первый депозит';
 $description = 'Какой бонус дают за регистрацию в Pocket Option: 175% на первый депозит до 10 000$. Как активировать, что такое вейджер и как вывести прибыль с бонуса.';
-$canonical = $SITE_URL . '/bonus/';
+$canonical = SITE_URL . '/bonus/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -59,6 +59,7 @@ ob_start();
   <details class="faq-item"><summary>Что такое вейджер и как его выполнить?</summary><div class="faq-answer">Вейджер — это множитель, показывающий, на какую сумму нужно совершить сделок для отыгрыша начисления. При вейджере ×35 и поощрении 100 USD потребуется заключить сделок на 3 500 USD.</div></details>
 </div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

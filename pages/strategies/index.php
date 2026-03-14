@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Стратегии торговли на Pocket Option: что работает в 2026';
 $description = 'Лучшие стратегии торговли бинарными опционами на Pocket Option: трендовые, контртрендовые, канальные, Price Action и новостные стратегии с правилами входа.';
-$canonical = $SITE_URL . '/strategies/';
+$canonical = SITE_URL . '/strategies/';
 $og_type = 'article';
 require_once dirname(__DIR__, 2) . '/includes/head.php';
 require_once dirname(__DIR__, 2) . '/includes/header.php';
@@ -46,6 +46,7 @@ ob_start();
 
 <div class="warning">⚠️ Торговля опционами связана с высоким риском потери капитала. Данный сайт не является официальным ресурсом платформы.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

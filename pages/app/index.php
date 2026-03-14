@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Мобильное приложение Pocket Option — iOS и Android';
 $description = 'Скачайте мобильное приложение Pocket Option для iOS и Android. Рейтинг 4.8★, 150 000 отзывов. Все функции торговой платформы в смартфоне.';
-$canonical = $SITE_URL . '/app/';
+$canonical = SITE_URL . '/app/';
 $og_type = 'website';
 
 $page_schema = json_encode([

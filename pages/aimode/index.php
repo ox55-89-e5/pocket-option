@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'AI Mode на Pocket Option — что такое и как работает';
 $description = 'Что такое AI Mode на Pocket Option: автоматические торговые сигналы на основе искусственного интеллекта, как включить и использовать.';
-$canonical = $SITE_URL . '/aimode/';
+$canonical = SITE_URL . '/aimode/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -37,6 +37,7 @@ ob_start();
 <h2>Для кого подходит</h2>
 <p>AI Mode полезен как новичкам (помогает ориентироваться на рынке), так и опытным трейдерам (дополнительное подтверждение торговых идей).</p>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

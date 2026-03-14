@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Бездепозитный бонус Pocket Option — как получить без вложений';
 $description = 'Бездепозитный бонус Pocket Option: как получить деньги на торговлю без пополнения счёта, условия активации и вывода прибыли.';
-$canonical = $SITE_URL . '/no-deposit-bonus/';
+$canonical = SITE_URL . '/no-deposit-bonus/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -38,6 +38,7 @@ ob_start();
 
 <div class="notice">💡 Следите за актуальными акциями в официальном Telegram-канале Pocket Option — там публикуются свежие бездепозитные бонусы.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

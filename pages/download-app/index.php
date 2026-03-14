@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Скачать приложение Pocket Option на Android и iPhone — 2026';
 $description = 'Как скачать приложение Pocket Option на Android (APK) и iPhone (App Store). Официальные источники, инструкции по установке и решение проблем.';
-$canonical = $SITE_URL . '/download-app/';
+$canonical = SITE_URL . '/download-app/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -64,6 +64,7 @@ ob_start();
   <details class="faq-item"><summary>Работает ли демо-счёт в приложении?</summary><div class="faq-answer">Да, сразу после входа доступен демо-счёт с $10 000 виртуальных средств.</div></details>
 </div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

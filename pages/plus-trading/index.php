@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Как торговать в плюс на Pocket Option — стратегии прибыльной торговли';
 $description = 'Как стабильно торговать в плюс на Pocket Option: управление капиталом, психология трейдера, лучшие стратегии и типичные ошибки.';
-$canonical = $SITE_URL . '/plus-trading/';
+$canonical = SITE_URL . '/plus-trading/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -41,6 +41,7 @@ ob_start();
 
 <div class="notice">💡 Прибыльная торговля — это марафон, а не спринт. Стабильный результат 5–10% в месяц лучше, чем попытка удвоить депозит за неделю.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

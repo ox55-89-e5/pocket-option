@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Pocket Option в черном списке ЦБ — что это означает для трейдера';
 $description = 'Почему Pocket Option в чёрном списке Банка России, что это значит на практике и насколько безопасна платформа для российских трейдеров.';
-$canonical = $SITE_URL . '/blacklist/';
+$canonical = SITE_URL . '/blacklist/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -35,6 +35,7 @@ ob_start();
 
 <div class="notice">⚠️ Торговля на нелицензированных в России платформах ведётся на собственный риск трейдера. Взвешивайте риски перед инвестированием реальных средств.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Партнёрская программа Pocket Option — как зарабатывать на рефералах';
 $description = 'Как работает партнёрская программа Pocket Option: условия, комиссии, способы привлечения трейдеров и вывода заработанного.';
-$canonical = $SITE_URL . '/affiliate/';
+$canonical = SITE_URL . '/affiliate/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -39,6 +39,7 @@ ob_start();
 <h2>Сколько можно заработать</h2>
 <p>Заработок зависит от активности привлечённых трейдеров. Активный партнёр с аудиторией может зарабатывать от нескольких сотен до тысяч долларов в месяц.</p>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

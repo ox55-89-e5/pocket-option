@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'История сделок Pocket Option — как посмотреть и скачать';
 $description = 'Как просмотреть историю сделок и транзакций в Pocket Option: где найти раздел, как фильтровать операции и скачать отчёт.';
-$canonical = $SITE_URL . '/history/';
+$canonical = SITE_URL . '/history/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -40,6 +40,7 @@ ob_start();
 
 <div class="notice">💡 Анализ истории сделок помогает выявить слабые места в торговой стратегии и улучшить результаты.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

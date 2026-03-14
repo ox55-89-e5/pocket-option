@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Как активировать промокод Pocket Option — инструкция 2026';
 $description = 'Как активировать промокод Pocket Option: где найти поле ввода, актуальные коды START100, WEEKLY30, BONUS50 и что делать, если промокод не активируется.';
-$canonical = $SITE_URL . '/activate-promocode/';
+$canonical = SITE_URL . '/activate-promocode/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -67,6 +67,7 @@ ob_start();
   <details class="faq-item"><summary>Можно ли активировать промокод без депозита?</summary><div class="faq-answer">Да. WEEKLY30 — пример бездепозитного бонуса. Но START100 и BONUS50 требуют пополнения.</div></details>
 </div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

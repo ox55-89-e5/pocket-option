@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Турниры на Pocket Option — как участвовать и выиграть';
 $description = 'Как принять участие в торговых турнирах Pocket Option: условия, призовой фонд, стратегии победы и расписание.';
-$canonical = $SITE_URL . '/tournaments/';
+$canonical = SITE_URL . '/tournaments/';
 $og_type = 'article';
 require_once dirname(__DIR__, 2) . '/includes/head.php';
 require_once dirname(__DIR__, 2) . '/includes/header.php';
@@ -38,6 +38,7 @@ ob_start();
 
 <div class="notice">💡 Выигрыш в турнире зачисляется на реальный счёт и доступен для вывода или торговли.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

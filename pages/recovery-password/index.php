@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Восстановление пароля Pocket Option: что делать если забыл';
 $description = 'Как восстановить пароль от аккаунта Pocket Option через email или телефон. Что делать если письмо не приходит, и как защитить аккаунт после смены.';
-$canonical = $SITE_URL . '/recovery-password/';
+$canonical = SITE_URL . '/recovery-password/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -49,6 +49,7 @@ ob_start();
   <details class="faq-item"><summary>Как восстановить пароль, если я не помню почту и телефон?</summary><div class="faq-answer">Единственный вариант — написать в службу поддержки. Вам потребуется подтвердить владение аккаунтом.</div></details>
 </div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Отзывы о мобильном приложении Pocket Option — iOS и Android';
 $description = 'Реальные отзывы пользователей о мобильном приложении Pocket Option: удобство, скорость, функционал на iPhone и Android.';
-$canonical = $SITE_URL . '/app-reviews/';
+$canonical = SITE_URL . '/app-reviews/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -40,6 +40,7 @@ ob_start();
 
 <div class="notice">💡 Для лучшей работы приложения убедитесь, что у вас установлена последняя версия из официального магазина.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

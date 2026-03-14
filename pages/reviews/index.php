@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Отзывы о Pocket Option — реальные мнения трейдеров 2026';
 $description = 'Реальные отзывы о платформе Pocket Option: плюсы и минусы по мнению трейдеров, рейтинг надёжности и честные оценки.';
-$canonical = $SITE_URL . '/reviews/';
+$canonical = SITE_URL . '/reviews/';
 $og_type = 'article';
 require_once dirname(__DIR__, 2) . '/includes/head.php';
 require_once dirname(__DIR__, 2) . '/includes/header.php';
@@ -31,6 +31,7 @@ ob_start();
 <p>На независимых платформах (Trustpilot, отраслевые форумы) Pocket Option имеет оценку около <strong>4.0/5</strong>. Большинство отрицательных отзывов связаны с убыточными сделками, а не с проблемами платформы.</p>
 <div class="notice">💡 Торговля бинарными опционами сопряжена с высоким риском. Изучите платформу на демо-счёте перед вложением реальных средств.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

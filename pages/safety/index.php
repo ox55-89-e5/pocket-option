@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Безопасность Pocket Option — насколько надёжна платформа';
 $description = 'Насколько безопасна платформа Pocket Option: защита средств, шифрование, верификация и меры защиты аккаунта.';
-$canonical = $SITE_URL . '/safety/';
+$canonical = SITE_URL . '/safety/';
 $og_type = 'article';
 require_once dirname(__DIR__, 2) . '/includes/head.php';
 require_once dirname(__DIR__, 2) . '/includes/header.php';
@@ -34,6 +34,7 @@ ob_start();
 </ol>
 <div class="notice">💡 Поддержка Pocket Option никогда не запрашивает ваш пароль или коды подтверждения. Если кто-то просит эти данные — это мошенники.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

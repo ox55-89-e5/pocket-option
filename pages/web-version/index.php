@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Веб-версия Pocket Option — торговля через браузер';
 $description = 'Как пользоваться веб-версией Pocket Option: преимущества, отличия от приложения и как войти без установки.';
-$canonical = $SITE_URL . '/web-version/';
+$canonical = SITE_URL . '/web-version/';
 $og_type = 'article';
 require_once dirname(__DIR__, 2) . '/includes/head.php';
 require_once dirname(__DIR__, 2) . '/includes/header.php';
@@ -42,6 +42,7 @@ ob_start();
 
 <div class="notice">💡 Если сайт не открывается, используйте VPN или официальное мобильное приложение — оно работает без зависимости от блокировок провайдера.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

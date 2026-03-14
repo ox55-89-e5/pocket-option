@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Как вывести деньги с Pocket Option на карту — инструкция 2026';
 $description = 'Пошаговая инструкция по выводу средств с Pocket Option на банковскую карту. Лимиты, комиссии, причины задержек и чек-лист перед выводом.';
-$canonical = $SITE_URL . '/withdraw/';
+$canonical = SITE_URL . '/withdraw/';
 $og_type = 'article';
 require_once dirname(__DIR__, 2) . '/includes/head.php';
 require_once dirname(__DIR__, 2) . '/includes/header.php';
@@ -46,6 +46,7 @@ ob_start();
   <details class="faq-item"><summary>Почему пришло меньше, чем запрашивал?</summary><div class="faq-answer">Разница — комиссия банка за входящий перевод из-за рубежа или конвертация валюты. Pocket Option отправляет средства в полном объёме.</div></details>
 </div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'FAQ по Pocket Option — ответы на вопросы о торговле, депозитах, безопасности';
 $description = 'Полные ответы на часто задаваемые вопросы о платформе Pocket Option: регистрация, депозит, вывод средств, промокоды, безопасность, мобильное приложение.';
-$canonical = $SITE_URL . '/faq/';
+$canonical = SITE_URL . '/faq/';
 $og_type = 'website';
 
 $faq_categories = [

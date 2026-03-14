@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Обучение торговле на Pocket Option — с чего начать';
 $description = 'Как обучиться торговле бинарными опционами на Pocket Option: обучающие материалы, вебинары, демо-счёт и стратегии для начинающих.';
-$canonical = $SITE_URL . '/training/';
+$canonical = SITE_URL . '/training/';
 $og_type = 'article';
 require_once dirname(__DIR__, 2) . '/includes/head.php';
 require_once dirname(__DIR__, 2) . '/includes/header.php';
@@ -36,6 +36,7 @@ ob_start();
 
 <div class="notice">💡 Большинство успешных трейдеров потратили на обучение от 3 до 6 месяцев перед стабильными результатами.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

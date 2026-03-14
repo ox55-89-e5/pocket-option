@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/links.php'; ?>
 <header class="header">
   <div class="container header-inner">
     <!-- Logo -->
@@ -13,8 +14,8 @@
 
     <!-- Desktop CTA buttons -->
     <div class="header-cta">
-      <a href="https://pocketoption-po.com/login" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Вход</a>
-      <a href="https://pocketoption-po.com/register" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Регистрация</a>
+      <a href="/lk/" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Вход</a>
+      <a href="/signup/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Регистрация</a>
     </div>
 
     <!-- Burger button -->
@@ -32,8 +33,8 @@
       <a href="/faq/" class="mobile-link">FAQ</a>
     </nav>
     <div class="mobile-cta">
-      <a href="https://pocketoption-po.com/login" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Вход</a>
-      <a href="https://pocketoption-po.com/register" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Регистрация</a>
+      <a href="/lk/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Вход</a>
+      <a href="/signup/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Регистрация</a>
     </div>
   </div>
 </header>

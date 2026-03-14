@@ -2,19 +2,19 @@
 // Called at top of every page.
 // Required vars: $title, $description, $canonical
 // Optional vars: $og_title, $og_description, $og_type, $keywords
+require_once __DIR__ . '/links.php';
 $og_title = $og_title ?? $title;
 $og_description = $og_description ?? $description;
 $og_type = $og_type ?? 'website';
 $keywords = $keywords ?? 'Pocket Option, бинарные опционы, торговля бинарными опционами, демо счет, промокоды Pocket Option, скачать Pocket Option';
-$SITE_URL = 'https://pocketoption-po.com';
 $SITE_NAME = 'Pocket Option';
 
 $organization_schema = json_encode([
   '@context' => 'https://schema.org',
   '@type' => 'Organization',
   'name' => 'Pocket Option',
-  'url' => $SITE_URL,
-  'logo' => $SITE_URL . '/logo.png',
+  'url' => SITE_URL,
+  'logo' => SITE_URL . '/logo.png',
   'sameAs' => ['https://t.me/pocketoption'],
   'contactPoint' => [
     '@type' => 'ContactPoint',
@@ -42,7 +42,7 @@ $organization_schema = json_encode([
   <meta property="og:site_name" content="<?= $SITE_NAME ?>">
   <meta property="og:title" content="<?= htmlspecialchars($og_title) ?>">
   <meta property="og:description" content="<?= htmlspecialchars($og_description) ?>">
-  <meta property="og:image" content="<?= $SITE_URL ?>/og-image.jpg">
+  <meta property="og:image" content="<?= SITE_URL ?>/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <!-- Twitter -->

@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'С чего начать новичку на Pocket Option — пошаговое руководство';
 $description = 'Полное руководство для новичков на Pocket Option: регистрация, демо-счёт, первые сделки, советы по торговле.';
-$canonical = $SITE_URL . '/beginner/';
+$canonical = SITE_URL . '/beginner/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -40,6 +40,7 @@ ob_start();
 
 <div class="notice">💡 Большинство успешных трейдеров провели на демо-счёте не менее месяца перед переходом к реальным деньгам.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

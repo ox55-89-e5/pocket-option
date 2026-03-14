@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Верификация Pocket Option: можно ли торговать без верификации';
 $description = 'Можно ли торговать в Pocket Option без верификации? Лимиты на вывод, пошаговая инструкция по верификации и риски анонимной торговли.';
-$canonical = $SITE_URL . '/verification/';
+$canonical = SITE_URL . '/verification/';
 $og_type = 'article';
 require_once dirname(__DIR__, 2) . '/includes/head.php';
 require_once dirname(__DIR__, 2) . '/includes/header.php';
@@ -36,6 +36,7 @@ ob_start();
   <details class="faq-item"><summary>Сколько длится верификация?</summary><div class="faq-answer">Обычно 5 минут — 2 часа. В редких случаях до 24 часов.</div></details>
 </div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

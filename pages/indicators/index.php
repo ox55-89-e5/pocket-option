@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Индикаторы Pocket Option — какие есть и как использовать';
 $description = 'Какие технические индикаторы доступны на Pocket Option: RSI, MACD, Bollinger Bands и другие. Как выбрать и применять в торговле.';
-$canonical = $SITE_URL . '/indicators/';
+$canonical = SITE_URL . '/indicators/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -40,6 +40,7 @@ ob_start();
 
 <div class="notice">💡 Не перегружайте график слишком большим количеством индикаторов — это затрудняет анализ. Начните с 1–2 инструментов.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

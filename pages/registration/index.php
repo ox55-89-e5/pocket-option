@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Регистрация в Pocket Option: пошаговая инструкция 2026';
 $description = 'Как зарегистрироваться в Pocket Option: через email или Google за 1 минуту. Демо-счёт 10 000$ и бонус START100 сразу после регистрации.';
-$canonical = $SITE_URL . '/registration/';
+$canonical = SITE_URL . '/registration/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -51,6 +51,7 @@ ob_start();
 
 <p>Остались вопросы? Загляните в <a href="/faq/">FAQ</a> или напишите в поддержку через онлайн-чат.</p>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

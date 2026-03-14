@@ -1,15 +1,15 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Личный кабинет Pocket Option — вход, настройки, безопасность';
 $description = 'Личный кабинет Pocket Option: вход через email или Google, верификация, пополнение и вывод, двухфакторная аутентификация. Управляйте счётом 24/7.';
-$canonical = $SITE_URL . '/cabinet/';
+$canonical = SITE_URL . '/cabinet/';
 $og_type = 'website';
 
 $page_schema = json_encode([
   '@context' => 'https://schema.org',
   '@type' => 'WebPage',
   'name' => 'Личный кабинет Pocket Option',
-  'url' => $SITE_URL . '/cabinet/',
+  'url' => SITE_URL . '/cabinet/',
   'description' => 'Управление торговым аккаунтом Pocket Option: вход, верификация, пополнение и вывод средств.',
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
@@ -118,8 +118,8 @@ require_once dirname(__DIR__, 2) . '/includes/header.php';
       <h1 class="cab-hero-title">Личный кабинет Pocket Option</h1>
       <p class="cab-hero-subtext">Управляйте счётом, настраивайте безопасность и отслеживайте статистику</p>
       <div class="cab-hero-btns">
-        <a href="https://pocketoption-po.com/login" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Войти в кабинет</a>
-        <a href="https://pocketoption-po.com/register" class="btn btn-outline btn-lg" target="_blank" rel="noopener noreferrer">Регистрация</a>
+        <a href="/lk/" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Войти в кабинет</a>
+        <a href="/signup/" class="btn btn-outline btn-lg" target="_blank" rel="noopener noreferrer">Регистрация</a>
       </div>
     </div>
   </div>
@@ -326,7 +326,7 @@ require_once dirname(__DIR__, 2) . '/includes/header.php';
     <div class="cab-cta-box">
       <h2 class="cab-cta-title">Войдите в личный кабинет</h2>
       <p class="cab-cta-text">Управляйте счётом, пополняйте и выводите средства, настраивайте безопасность</p>
-      <a href="https://pocketoption-po.com/login" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Войти в кабинет</a>
+      <a href="/lk/" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Войти в кабинет</a>
     </div>
   </div>
 </section>

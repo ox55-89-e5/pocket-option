@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Лицензия Pocket Option — регуляция и надёжность брокера';
 $description = 'Лицензия и регуляция Pocket Option: IFMRRC, Mwali International Services Authority. Насколько надёжна платформа и как проверить лицензию.';
-$canonical = $SITE_URL . '/license/';
+$canonical = SITE_URL . '/license/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -36,6 +36,7 @@ ob_start();
 
 <div class="notice">💡 Перед началом торговли убедитесь, что понимаете правовой статус платформы в вашей стране. Торговля ведётся на собственный риск.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

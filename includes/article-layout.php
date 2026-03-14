@@ -9,14 +9,13 @@
 
 require_once __DIR__ . '/cta-links.php';
 
-$SITE_URL = 'https://pocketoption-po.com';
 $cta = get_cta($article_slug);
 
 // JSON-LD schemas
 $breadcrumb_items = [];
 foreach ($breadcrumbs as $i => $crumb) {
   $item = ['@type' => 'ListItem', 'position' => $i + 1, 'name' => $crumb['label']];
-  if (!empty($crumb['href'])) $item['item'] = $SITE_URL . $crumb['href'];
+  if (!empty($crumb['href'])) $item['item'] = SITE_URL . $crumb['href'];
   $breadcrumb_items[] = $item;
 }
 
@@ -30,9 +29,9 @@ $article_schema_data = [
   '@context' => 'https://schema.org',
   '@type' => 'Article',
   'headline' => $article_title,
-  'url' => $SITE_URL . $article_slug,
+  'url' => SITE_URL . $article_slug,
   'inLanguage' => 'ru',
-  'publisher' => ['@type' => 'Organization', 'name' => 'Pocket Option', 'url' => $SITE_URL],
+  'publisher' => ['@type' => 'Organization', 'name' => 'Pocket Option', 'url' => SITE_URL],
   'breadcrumb' => ['@type' => 'BreadcrumbList', 'itemListElement' => $breadcrumb_items],
 ];
 if (!empty($article_description)) $article_schema_data['description'] = $article_description;

@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Pocket Option ожидание верификации — что делать и сколько ждать';
 $description = 'Сколько ждать верификацию Pocket Option, как проверить статус и что делать если верификация затянулась.';
-$canonical = $SITE_URL . '/wait-verification/';
+$canonical = SITE_URL . '/wait-verification/';
 $og_type = 'article';
 require_once dirname(__DIR__, 2) . '/includes/head.php';
 require_once dirname(__DIR__, 2) . '/includes/header.php';
@@ -44,6 +44,7 @@ ob_start();
 
 <div class="notice">💡 Если статус не изменился более 3 дней, обратитесь в службу поддержки через чат с указанием даты подачи документов.</div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';

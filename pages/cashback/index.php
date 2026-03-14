@@ -1,8 +1,8 @@
 <?php
-$SITE_URL = 'https://pocketoption-po.com';
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $title = 'Кешбэк Pocket Option: как получить и условия программы 2026';
 $description = 'Что такое кешбэк в Pocket Option и как его получить: процент возврата по статусам, инструкция активации, условия вывода и сравнение с бонусами.';
-$canonical = $SITE_URL . '/cashback/';
+$canonical = SITE_URL . '/cashback/';
 $og_type = 'article';
 
 require_once dirname(__DIR__, 2) . '/includes/head.php';
@@ -64,6 +64,7 @@ ob_start();
   <details class="faq-item"><summary>Есть ли срок действия у начисленного кешбэка?</summary><div class="faq-answer">Нет, деньги хранятся бессрочно. Можно копить или выводить частями.</div></details>
 </div>
 <?php
+require_once dirname(__DIR__, 2) . '/includes/links.php';
 $article_content = ob_get_clean();
 require_once dirname(__DIR__, 2) . '/includes/article-layout.php';
 require_once dirname(__DIR__, 2) . '/includes/footer.php';
